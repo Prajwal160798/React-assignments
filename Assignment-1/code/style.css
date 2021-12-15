@@ -1,1 +1,89 @@
 
+
+@media only screen and (max-width: 320px){
+    .yellow-container,.blue-container,.red-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .yellow-container .content{
+        background-color: yellow;
+        height: 13vh;
+        margin: 20px;
+    }
+    .red-container .content{
+        background-color: red;
+        height: 28vh;
+        margin: 20px;
+    }
+    .blue-container .content{
+        background-color: blue;
+        height: 13vh;
+        margin: 20px;
+    }
+    
+}
+@media only screen and (min-width: 321px) and (max-width:768px){
+    .yellow-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .yellow-container .content{
+        background-color: yellow;
+        width: 45vw;
+        height: 30vh;
+        margin: 10px;
+    }
+    .red-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .red-container .content{
+        background-color: red;
+        width: 94vw;
+        height: 30vh;
+        margin: 20px;
+    }
+    .blue-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .blue-container .content{
+        background-color: blue;
+        width: 94vw;
+        height: 15vh;
+        margin: 20px;
+    }
+}
+@media only screen and (min-width: 769px){
+    .yellow-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .yellow-container .content{
+        background-color: yellow;
+        width: 45vw;
+        height: 30vh;
+        margin: 20px;
+    }
+    .red-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .red-container .content{
+        background-color: red;
+        width: 94vw;
+        height: 30vh;
+        margin: 20px;
+    }
+    .blue-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .blue-container .content{
+      
+        background-color: blue;
+        width: 30vw;
+        height: 30vh;
+        margin: 20px;
+    }
+}

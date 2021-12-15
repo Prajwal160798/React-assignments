@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Designing Web App using HTML/CSS/REACT</title>
 <link rel="stylesheet" href="style.css" />
 <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
@@ -14,7 +14,21 @@
     <div id="root"></div>
     <script type="text/babel">
 //React Code here
- ReactDOM.render(<div></div>,document.getElementById('root'));
+var myresponsiveLoyout = React.createElement('div',{className:'main-content'},
+React.createElement('div',{className:'yellow-container'},
+React.createElement('div',{className:'content'},'',null),
+React.createElement('div',{className:'content'},'',null)
+,null),
+React.createElement('div',{className:'red-container'},
+React.createElement('div',{className:'content'},'',null)
+,null),
+React.createElement('div',{className:'blue-container'},
+React.createElement('div',{className:'content'},'',null),
+React.createElement('div',{className:'content'},'',null),
+React.createElement('div',{className:'content'},'',null)
+,null),
+)
+ ReactDOM.render(myresponsiveLoyout,document.getElementById('root'));
 
 </script>
 <!--
